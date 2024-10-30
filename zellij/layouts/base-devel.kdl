@@ -11,11 +11,12 @@ layout {
     }
 tab name="Terminal" {
     pane 
-    pane split_direction="vertical" {
-        pane
-        pane command="lazygit"
-      }
   }  
+  tab name="GIT" {
+      pane {
+          command "lazygit"
+        }
+    }
   tab name="NVIM" {
       pane {
           command "nvim"

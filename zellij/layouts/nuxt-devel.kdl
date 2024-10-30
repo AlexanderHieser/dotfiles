@@ -10,20 +10,27 @@ layout {
         }
     }
 tab name="Terminal" {
-    pane 
     pane split_direction="vertical" {
+    pane 
         pane {
             command "bun"
             args "dev"
           }
-        pane command="lazygit"
       }
   }  
+
+  tab name="LazyGIT" {
+      pane {
+          command "lazygit"
+        }
+    }
+
   tab name="NVIM" {
       pane {
           command "nvim"
           args "."
         }
     }
+
 }
 
